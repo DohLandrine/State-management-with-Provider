@@ -24,6 +24,16 @@ class _HomePageState extends State<HomePage> {
                   backgroundColor: WidgetStatePropertyAll(
                       Color.fromARGB(255, 96, 187, 143))),
               child: const Text('Setting')),
+          FilledButton(
+              onPressed: () {
+                setState(() {
+                  Navigator.pushNamed(context, '/counter_page.dart');
+                });
+              },
+              style: const ButtonStyle(
+                  backgroundColor: WidgetStatePropertyAll(
+                      Color.fromARGB(255, 96, 187, 143))),
+              child: const Text('Counter')),
         ],
         backgroundColor: Colors.greenAccent,
         title: const Text(
